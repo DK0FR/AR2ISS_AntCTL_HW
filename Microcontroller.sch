@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -371,11 +371,11 @@ Wire Wire Line
 	2900 2400 3000 2400
 Text Label 4550 2350 2    50   ~ 0
 NRST
-Text Label 4550 3650 2    50   ~ 0
+Text Label 4450 3650 2    50   ~ 0
 SWO
-Text Label 5750 4650 0    50   ~ 0
+Text Label 5850 4650 0    50   ~ 0
 SWDIO
-Text Label 5750 4750 0    50   ~ 0
+Text Label 5850 4750 0    50   ~ 0
 SWCLK
 Text Label 9550 3150 2    50   ~ 0
 NRST
@@ -415,23 +415,23 @@ Wire Wire Line
 	9450 3400 9450 3250
 Wire Wire Line
 	9450 3250 9550 3250
-Text HLabel 4550 4150 0    50   Input ~ 0
+Text HLabel 4450 4150 0    50   Input ~ 0
 I2C1_SCL
-Text HLabel 4550 4250 0    50   Input ~ 0
+Text HLabel 4450 4250 0    50   Input ~ 0
 I2C1_SDA
-Text HLabel 4550 4650 0    50   Input ~ 0
+Text HLabel 4450 4650 0    50   Input ~ 0
 I2C2_SCL
-Text HLabel 4550 4750 0    50   Input ~ 0
+Text HLabel 4450 4750 0    50   Input ~ 0
 I2C2_SDA
-Text HLabel 5750 4350 2    50   Input ~ 0
+Text HLabel 5850 4350 2    50   Input ~ 0
 USART1_TX
 Wire Wire Line
 	5350 1750 5350 2150
-Text HLabel 4550 3950 0    50   Input ~ 0
+Text HLabel 4450 3950 0    50   Input ~ 0
 USART1_RX
-Text HLabel 5750 4850 2    50   Input ~ 0
+Text HLabel 4450 4850 0    50   Input ~ 0
 SPI2_MOSI
-Text HLabel 4550 4350 0    50   Input ~ 0
+Text HLabel 4450 4350 0    50   Input ~ 0
 SPI2_CLK
 $Comp
 L power:GND #PWR?
@@ -482,4 +482,102 @@ Wire Wire Line
 	3950 2400 4100 2400
 Wire Wire Line
 	3400 2800 4100 2800
+Text HLabel 4450 2950 0    50   Input ~ 0
+LED1
+Text HLabel 4450 3050 0    50   Input ~ 0
+LED2
+Text HLabel 5850 4150 2    50   Input ~ 0
+ENC_A
+Text HLabel 5850 4250 2    50   Input ~ 0
+ENC_B
+Wire Wire Line
+	5750 4150 5850 4150
+Wire Wire Line
+	5750 4250 5850 4250
+Wire Wire Line
+	5750 4850 5850 4850
+Wire Wire Line
+	4450 3350 4550 3350
+Wire Wire Line
+	4450 3450 4550 3450
+Wire Wire Line
+	4450 3550 4550 3550
+Wire Wire Line
+	4450 3650 4550 3650
+Wire Wire Line
+	4450 3750 4550 3750
+Wire Wire Line
+	4450 3850 4550 3850
+Wire Wire Line
+	4450 3950 4550 3950
+Wire Wire Line
+	4450 4050 4550 4050
+Wire Wire Line
+	4450 4150 4550 4150
+Wire Wire Line
+	4450 4250 4550 4250
+Wire Wire Line
+	4450 4350 4550 4350
+Wire Wire Line
+	4450 4450 4550 4450
+Wire Wire Line
+	4450 4550 4550 4550
+Wire Wire Line
+	4450 4650 4550 4650
+Wire Wire Line
+	4450 4750 4550 4750
+Wire Wire Line
+	4450 4850 4550 4850
+Wire Wire Line
+	5850 3350 5750 3350
+Wire Wire Line
+	5850 3450 5750 3450
+Wire Wire Line
+	5850 3550 5750 3550
+Wire Wire Line
+	5850 3650 5750 3650
+Wire Wire Line
+	5850 3750 5750 3750
+Wire Wire Line
+	5850 3850 5750 3850
+Wire Wire Line
+	5850 3950 5750 3950
+Wire Wire Line
+	5850 4050 5750 4050
+Wire Wire Line
+	5850 4350 5750 4350
+Wire Wire Line
+	5850 4450 5750 4450
+Wire Wire Line
+	5850 4550 5750 4550
+Wire Wire Line
+	5850 4650 5750 4650
+Wire Wire Line
+	5850 4750 5750 4750
+Text HLabel 5850 3950 2    50   Input ~ 0
+PTT1
+Text HLabel 5850 4050 2    50   Input ~ 0
+PTT2
+Text HLabel 4450 3350 0    50   Input ~ 0
+LCD_EN
+Text HLabel 4450 3450 0    50   Input ~ 0
+LCD_SEL
+Text HLabel 5850 4850 2    50   Input ~ 0
+LCD_Backlight
+Text HLabel 5850 3350 2    50   Input ~ 0
+ADC1_5
+Text HLabel 5850 3450 2    50   Input ~ 0
+ADC1_6
+Text HLabel 5850 3650 2    50   Input ~ 0
+ADC1_8
+Text HLabel 5850 3750 2    50   Input ~ 0
+ADC1_9
+Text HLabel 5850 3850 2    50   Input ~ 0
+ADC1_10
+Wire Wire Line
+	4550 2950 4450 2950
+Wire Wire Line
+	4550 3050 4450 3050
+Text HLabel 4450 3550 0    50   Input ~ 0
+Preamp
 $EndSCHEMATC

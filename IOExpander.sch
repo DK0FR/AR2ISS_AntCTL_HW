@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -13,16 +13,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3750 2300 0    50   Input ~ 0
+Text HLabel 3650 2300 0    50   Input ~ 0
 SDA
-Text HLabel 3750 2400 0    50   Input ~ 0
+Text HLabel 3650 2400 0    50   Input ~ 0
 SCL
-Text HLabel 3750 3200 0    50   Input ~ 0
+Text HLabel 3650 3200 0    50   Input ~ 0
 RESET
-Text HLabel 3750 3900 0    50   Input ~ 0
-A0
-Text HLabel 3750 3800 0    50   Input ~ 0
-A1
 $Comp
 L power:GND #PWR?
 U 1 1 607285C4
@@ -96,19 +92,6 @@ Wire Wire Line
 	5150 1300 5150 1400
 Wire Wire Line
 	5150 1700 5150 1800
-$Comp
-L Interface_Expansion:MCP23017_SO U?
-U 1 1 607270E1
-P 4450 3100
-AR Path="/607267A8/607270E1" Ref="U?"  Part="1" 
-AR Path="/60679D69/607270E1" Ref="U?"  Part="1" 
-F 0 "U?" H 4450 4381 50  0000 C CNN
-F 1 "MCP23017_SO" H 4450 4290 50  0000 C CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 4650 2100 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 4650 2000 50  0001 L CNN
-	1    4450 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5450 2300 5150 2300
 Wire Wire Line
@@ -175,8 +158,6 @@ Entry Wire Line
 	5450 3800 5550 3900
 Entry Wire Line
 	5450 3900 5550 4000
-Wire Bus Line
-	5550 2100 5550 4000
 Text HLabel 6000 2100 2    50   Input ~ 0
 IOs
 Text Label 5300 2300 0    50   ~ 0
@@ -211,4 +192,172 @@ Text Label 5300 3800 0    50   ~ 0
 IO14
 Text Label 5300 3900 0    50   ~ 0
 IO15
+Text Label 5600 2100 0    50   ~ 0
+IO[0..15]
+$Comp
+L power:GND #PWR?
+U 1 1 607ACAD8
+P 2900 4450
+AR Path="/607267A8/607ACAD8" Ref="#PWR?"  Part="1" 
+AR Path="/60679D69/607ACAD8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2900 4200 50  0001 C CNN
+F 1 "GND" H 2905 4277 50  0000 C CNN
+F 2 "" H 2900 4450 50  0001 C CNN
+F 3 "" H 2900 4450 50  0001 C CNN
+	1    2900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR2ISS:R R?
+U 1 1 607B188F
+P 2650 4200
+AR Path="/60679D69/607B188F" Ref="R?"  Part="1" 
+AR Path="/607267A8/607B188F" Ref="R?"  Part="1" 
+F 0 "R?" H 2720 4246 50  0000 L CNN
+F 1 "R" H 2720 4155 50  0000 L CNN
+F 2 "" V 2580 4200 50  0001 C CNN
+F 3 "~" H 2650 4200 50  0001 C CNN
+	1    2650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607B1895
+P 2650 4450
+AR Path="/607267A8/607B1895" Ref="#PWR?"  Part="1" 
+AR Path="/60679D69/607B1895" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2650 4200 50  0001 C CNN
+F 1 "GND" H 2655 4277 50  0000 C CNN
+F 2 "" H 2650 4450 50  0001 C CNN
+F 3 "" H 2650 4450 50  0001 C CNN
+	1    2650 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4350 2650 4450
+$Comp
+L AR2ISS:R R?
+U 1 1 607B24D6
+P 2400 4200
+AR Path="/60679D69/607B24D6" Ref="R?"  Part="1" 
+AR Path="/607267A8/607B24D6" Ref="R?"  Part="1" 
+F 0 "R?" H 2470 4246 50  0000 L CNN
+F 1 "R" H 2470 4155 50  0000 L CNN
+F 2 "" V 2330 4200 50  0001 C CNN
+F 3 "~" H 2400 4200 50  0001 C CNN
+	1    2400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607B24DC
+P 2400 4450
+AR Path="/607267A8/607B24DC" Ref="#PWR?"  Part="1" 
+AR Path="/60679D69/607B24DC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2400 4200 50  0001 C CNN
+F 1 "GND" H 2405 4277 50  0000 C CNN
+F 2 "" H 2400 4450 50  0001 C CNN
+F 3 "" H 2400 4450 50  0001 C CNN
+	1    2400 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4350 2400 4450
+$Comp
+L AR2ISS:R R?
+U 1 1 607B4040
+P 2650 3450
+AR Path="/60679D69/607B4040" Ref="R?"  Part="1" 
+AR Path="/607267A8/607B4040" Ref="R?"  Part="1" 
+F 0 "R?" H 2720 3496 50  0000 L CNN
+F 1 "R" H 2720 3405 50  0000 L CNN
+F 2 "" V 2580 3450 50  0001 C CNN
+F 3 "~" H 2650 3450 50  0001 C CNN
+	1    2650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 607B4046
+P 2650 3200
+AR Path="/607267A8/607B4046" Ref="#PWR?"  Part="1" 
+AR Path="/60679D69/607B4046" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2650 3050 50  0001 C CNN
+F 1 "+5V" H 2665 3373 50  0000 C CNN
+F 2 "" H 2650 3200 50  0001 C CNN
+F 3 "" H 2650 3200 50  0001 C CNN
+	1    2650 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3200 2650 3300
+$Comp
+L AR2ISS:R R?
+U 1 1 607B4D77
+P 2400 3450
+AR Path="/60679D69/607B4D77" Ref="R?"  Part="1" 
+AR Path="/607267A8/607B4D77" Ref="R?"  Part="1" 
+F 0 "R?" H 2470 3496 50  0000 L CNN
+F 1 "R" H 2470 3405 50  0000 L CNN
+F 2 "" V 2330 3450 50  0001 C CNN
+F 3 "~" H 2400 3450 50  0001 C CNN
+	1    2400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 607B4D7D
+P 2400 3200
+AR Path="/607267A8/607B4D7D" Ref="#PWR?"  Part="1" 
+AR Path="/60679D69/607B4D7D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2400 3050 50  0001 C CNN
+F 1 "+5V" H 2415 3373 50  0000 C CNN
+F 2 "" H 2400 3200 50  0001 C CNN
+F 3 "" H 2400 3200 50  0001 C CNN
+	1    2400 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3200 2400 3300
+Wire Wire Line
+	2400 3700 2400 3600
+Wire Wire Line
+	2400 3700 2400 4050
+Connection ~ 2400 3700
+Wire Wire Line
+	2650 3800 2650 3600
+Wire Wire Line
+	2650 4050 2650 3800
+Connection ~ 2650 3800
+NoConn ~ 3750 3000
+Wire Wire Line
+	2900 3900 2900 4450
+Wire Wire Line
+	2400 3700 3750 3700
+Wire Wire Line
+	2650 3800 3750 3800
+Wire Wire Line
+	2900 3900 3750 3900
+Wire Wire Line
+	3650 2300 3750 2300
+Wire Wire Line
+	3650 3200 3750 3200
+Wire Wire Line
+	3650 2400 3750 2400
+$Comp
+L Interface_Expansion:MCP23017_SO U?
+U 1 1 607270E1
+P 4450 3100
+AR Path="/607267A8/607270E1" Ref="U?"  Part="1" 
+AR Path="/60679D69/607270E1" Ref="U?"  Part="1" 
+F 0 "U?" H 4450 4381 50  0000 C CNN
+F 1 "MCP23017_SO" H 4450 4290 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 4650 2100 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 4650 2000 50  0001 L CNN
+	1    4450 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3750 2900
+Wire Bus Line
+	5550 2100 5550 4000
 $EndSCHEMATC
