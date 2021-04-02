@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Interface_Expansion:MCP23008-xSO U?
-U 1 1 60613912
-P 8050 2950
-F 0 "U?" H 8050 3731 50  0000 C CNN
-F 1 "MCP23008-xSO" H 8050 3640 50  0000 C CNN
-F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 8050 1900 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf" H 9350 1750 50  0001 C CNN
-	1    8050 2950
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 1150 3750 900  950 
 U 60660B68
@@ -49,9 +38,40 @@ F8 "SPI2_MOSI" I R 4200 3400 50
 F9 "SPI2_CLK" I R 4200 3500 50 
 $EndSheet
 $Sheet
-S 5250 2550 700  950 
+S 5700 2050 750  850 
 U 607267A8
 F0 "IOExpander" 50
 F1 "IOExpander.sch" 50
+F2 "SDA" I L 5700 2100 50 
+F3 "SCL" I L 5700 2200 50 
+F4 "RESET" I L 5700 2450 50 
+F5 "A0" I L 5700 2700 50 
+F6 "A1" I L 5700 2800 50 
+F7 "IOs" I R 6450 2250 50 
 $EndSheet
+$Sheet
+S 5700 3200 750  850 
+U 60679D69
+F0 "IOExpander2" 50
+F1 "IOExpander.sch" 50
+F2 "SDA" I L 5700 3250 50 
+F3 "SCL" I L 5700 3350 50 
+F4 "RESET" I L 5700 3600 50 
+F5 "A0" I L 5700 3850 50 
+F6 "A1" I L 5700 3950 50 
+F7 "IOs" I R 6450 3400 50 
+$EndSheet
+$Sheet
+S 6900 2000 950  2350
+U 60679DF6
+F0 "LCD" 50
+F1 "LCD.sch" 50
+F2 "ENC_A" I R 7850 2100 50 
+F3 "ENC_B" I R 7850 2200 50 
+F4 "DisplayData" I R 7850 2400 50 
+F5 "DisplayCLK" I R 7850 2500 50 
+F6 "LEDs" I L 6900 2250 50 
+$EndSheet
+Wire Bus Line
+	6450 2250 6900 2250
 $EndSCHEMATC
