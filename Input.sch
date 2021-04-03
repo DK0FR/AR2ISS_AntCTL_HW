@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 5 9
 Title ""
 Date ""
 Rev ""
@@ -58,17 +58,6 @@ F 1 "10k" H 4920 1155 50  0000 L CNN
 F 2 "" V 4780 1200 50  0001 C CNN
 F 3 "~" H 4850 1200 50  0001 C CNN
 	1    4850 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR2ISS:R R?
-U 1 1 60A76EAD
-P 4850 1600
-F 0 "R?" H 4920 1646 50  0000 L CNN
-F 1 "1k" H 4920 1555 50  0000 L CNN
-F 2 "" V 4780 1600 50  0001 C CNN
-F 3 "~" H 4850 1600 50  0001 C CNN
-	1    4850 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -170,17 +159,6 @@ Text HLabel 6100 1250 2    50   Input ~ 0
 TX
 $Comp
 L AR2ISS:R R?
-U 1 1 60AA3C40
-P 4850 3700
-F 0 "R?" H 4920 3746 50  0000 L CNN
-F 1 "10k" H 4920 3655 50  0000 L CNN
-F 2 "" V 4780 3700 50  0001 C CNN
-F 3 "~" H 4850 3700 50  0001 C CNN
-	1    4850 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR2ISS:R R?
 U 1 1 60AA3C46
 P 5800 3700
 F 0 "R?" H 5870 3746 50  0000 L CNN
@@ -190,30 +168,6 @@ F 3 "~" H 5800 3700 50  0001 C CNN
 	1    5800 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L AR2ISS:R R?
-U 1 1 60AA3C4C
-P 4850 2900
-F 0 "R?" H 4920 2946 50  0000 L CNN
-F 1 "10k" H 4920 2855 50  0000 L CNN
-F 2 "" V 4780 2900 50  0001 C CNN
-F 3 "~" H 4850 2900 50  0001 C CNN
-	1    4850 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR2ISS:R R?
-U 1 1 60AA3C52
-P 4850 3300
-F 0 "R?" H 4920 3346 50  0000 L CNN
-F 1 "1k" H 4920 3255 50  0000 L CNN
-F 2 "" V 4780 3300 50  0001 C CNN
-F 3 "~" H 4850 3300 50  0001 C CNN
-	1    4850 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 3050 4850 3100
 Wire Wire Line
 	4850 3450 4850 3500
 $Comp
@@ -240,20 +194,10 @@ Wire Wire Line
 	5100 3500 5100 3350
 Connection ~ 4850 3500
 Wire Wire Line
-	4850 3500 4850 3550
-Wire Wire Line
-	4850 3850 4850 3900
-Wire Wire Line
-	4850 3900 5500 3900
-Wire Wire Line
 	5500 3900 5500 3950
 Wire Wire Line
 	5500 3550 5500 3900
 Connection ~ 5500 3900
-Wire Wire Line
-	4850 2750 4850 2700
-Wire Wire Line
-	4850 2700 5500 2700
 Wire Wire Line
 	5500 2700 5500 2750
 Wire Wire Line
@@ -316,17 +260,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn75176a.pdf" H 7100 4750 50  0001 C CNN
 $EndComp
 $Comp
 L AR2ISS:R R?
-U 1 1 60AB2566
-P 4850 5500
-F 0 "R?" H 4920 5546 50  0000 L CNN
-F 1 "10k" H 4920 5455 50  0000 L CNN
-F 2 "" V 4780 5500 50  0001 C CNN
-F 3 "~" H 4850 5500 50  0001 C CNN
-	1    4850 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR2ISS:R R?
 U 1 1 60AB256C
 P 5800 5500
 F 0 "R?" H 5870 5546 50  0000 L CNN
@@ -336,30 +269,6 @@ F 3 "~" H 5800 5500 50  0001 C CNN
 	1    5800 5500
 	1    0    0    -1  
 $EndComp
-$Comp
-L AR2ISS:R R?
-U 1 1 60AB2572
-P 4850 4700
-F 0 "R?" H 4920 4746 50  0000 L CNN
-F 1 "10k" H 4920 4655 50  0000 L CNN
-F 2 "" V 4780 4700 50  0001 C CNN
-F 3 "~" H 4850 4700 50  0001 C CNN
-	1    4850 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR2ISS:R R?
-U 1 1 60AB2578
-P 4850 5100
-F 0 "R?" H 4920 5146 50  0000 L CNN
-F 1 "1k" H 4920 5055 50  0000 L CNN
-F 2 "" V 4780 5100 50  0001 C CNN
-F 3 "~" H 4850 5100 50  0001 C CNN
-	1    4850 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 4850 4850 4900
 Wire Wire Line
 	4850 5250 4850 5300
 $Comp
@@ -390,20 +299,10 @@ Wire Wire Line
 	5100 5150 5200 5150
 Connection ~ 4850 5300
 Wire Wire Line
-	4850 5300 4850 5350
-Wire Wire Line
-	4850 5650 4850 5700
-Wire Wire Line
-	4850 5700 5500 5700
-Wire Wire Line
 	5500 5700 5500 5750
 Wire Wire Line
 	5500 5350 5500 5700
 Connection ~ 5500 5700
-Wire Wire Line
-	4850 4550 4850 4500
-Wire Wire Line
-	4850 4500 5500 4500
 Wire Wire Line
 	5500 4500 5500 4550
 Wire Wire Line
@@ -466,17 +365,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn75176a.pdf" H 7100 6450 50  0001 C CNN
 $EndComp
 $Comp
 L AR2ISS:R R?
-U 1 1 60ABC990
-P 4850 7200
-F 0 "R?" H 4920 7246 50  0000 L CNN
-F 1 "10k" H 4920 7155 50  0000 L CNN
-F 2 "" V 4780 7200 50  0001 C CNN
-F 3 "~" H 4850 7200 50  0001 C CNN
-	1    4850 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR2ISS:R R?
 U 1 1 60ABC996
 P 5800 7200
 F 0 "R?" H 5870 7246 50  0000 L CNN
@@ -484,17 +372,6 @@ F 1 "1k" H 5870 7155 50  0000 L CNN
 F 2 "" V 5730 7200 50  0001 C CNN
 F 3 "~" H 5800 7200 50  0001 C CNN
 	1    5800 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR2ISS:R R?
-U 1 1 60ABC99C
-P 4850 6400
-F 0 "R?" H 4920 6446 50  0000 L CNN
-F 1 "10k" H 4920 6355 50  0000 L CNN
-F 2 "" V 4780 6400 50  0001 C CNN
-F 3 "~" H 4850 6400 50  0001 C CNN
-	1    4850 6400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -508,8 +385,6 @@ F 3 "~" H 4850 6800 50  0001 C CNN
 	1    4850 6800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4850 6550 4850 6600
 Wire Wire Line
 	4850 6950 4850 7000
 $Comp
@@ -540,20 +415,10 @@ Wire Wire Line
 	5100 6850 5200 6850
 Connection ~ 4850 7000
 Wire Wire Line
-	4850 7000 4850 7050
-Wire Wire Line
-	4850 7350 4850 7400
-Wire Wire Line
-	4850 7400 5500 7400
-Wire Wire Line
 	5500 7400 5500 7450
 Wire Wire Line
 	5500 7050 5500 7400
 Connection ~ 5500 7400
-Wire Wire Line
-	4850 6250 4850 6200
-Wire Wire Line
-	4850 6200 5500 6200
 Wire Wire Line
 	5500 6200 5500 6250
 Wire Wire Line
@@ -614,13 +479,11 @@ Wire Wire Line
 	6350 1400 6350 1500
 Wire Wire Line
 	5500 2700 6550 2700
-Connection ~ 5500 2700
 Wire Wire Line
 	5800 3900 6550 3900
 Connection ~ 5800 3900
 Wire Wire Line
 	5500 4500 6550 4500
-Connection ~ 5500 4500
 Wire Wire Line
 	5800 5700 6550 5700
 Connection ~ 5800 5700
@@ -629,7 +492,6 @@ Wire Wire Line
 Connection ~ 5800 7400
 Wire Wire Line
 	5500 6200 6550 6200
-Connection ~ 5500 6200
 Wire Wire Line
 	3450 2750 3450 1400
 Wire Wire Line
@@ -863,5 +725,143 @@ F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5500 2650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn75176a.pdf" H 7100 2950 50  0001 C CNN
 	1    5500 3150
 	-1   0    0    -1  
+$EndComp
+$Comp
+L AR2ISS:R R?
+U 1 1 60AB2578
+P 4850 5100
+F 0 "R?" H 4920 5146 50  0000 L CNN
+F 1 "1k" H 4920 5055 50  0000 L CNN
+F 2 "" V 4780 5100 50  0001 C CNN
+F 3 "~" H 4850 5100 50  0001 C CNN
+	1    4850 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR2ISS:R R?
+U 1 1 60AA3C52
+P 4850 3300
+F 0 "R?" H 4920 3346 50  0000 L CNN
+F 1 "1k" H 4920 3255 50  0000 L CNN
+F 2 "" V 4780 3300 50  0001 C CNN
+F 3 "~" H 4850 3300 50  0001 C CNN
+	1    4850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR2ISS:R R?
+U 1 1 60A76EAD
+P 4850 1600
+F 0 "R?" H 4920 1646 50  0000 L CNN
+F 1 "1k" H 4920 1555 50  0000 L CNN
+F 2 "" V 4780 1600 50  0001 C CNN
+F 3 "~" H 4850 1600 50  0001 C CNN
+	1    4850 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6550 4850 6600
+Wire Wire Line
+	4850 7000 4850 7050
+Wire Wire Line
+	4850 7400 5500 7400
+Wire Wire Line
+	4850 7350 4850 7400
+$Comp
+L AR2ISS:R R?
+U 1 1 60ABC990
+P 4850 7200
+F 0 "R?" H 4920 7246 50  0000 L CNN
+F 1 "10k" H 4920 7155 50  0000 L CNN
+F 2 "" V 4780 7200 50  0001 C CNN
+F 3 "~" H 4850 7200 50  0001 C CNN
+	1    4850 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6250 4850 6200
+$Comp
+L AR2ISS:R R?
+U 1 1 60ABC99C
+P 4850 6400
+F 0 "R?" H 4920 6446 50  0000 L CNN
+F 1 "10k" H 4920 6355 50  0000 L CNN
+F 2 "" V 4780 6400 50  0001 C CNN
+F 3 "~" H 4850 6400 50  0001 C CNN
+	1    4850 6400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 6200
+Wire Wire Line
+	4850 6200 5500 6200
+Wire Wire Line
+	4850 5700 5500 5700
+Wire Wire Line
+	4850 5650 4850 5700
+Wire Wire Line
+	4850 5300 4850 5350
+$Comp
+L AR2ISS:R R?
+U 1 1 60AB2566
+P 4850 5500
+F 0 "R?" H 4920 5546 50  0000 L CNN
+F 1 "10k" H 4920 5455 50  0000 L CNN
+F 2 "" V 4780 5500 50  0001 C CNN
+F 3 "~" H 4850 5500 50  0001 C CNN
+	1    4850 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3500 4850 3550
+$Comp
+L AR2ISS:R R?
+U 1 1 60AA3C40
+P 4850 3700
+F 0 "R?" H 4920 3746 50  0000 L CNN
+F 1 "10k" H 4920 3655 50  0000 L CNN
+F 2 "" V 4780 3700 50  0001 C CNN
+F 3 "~" H 4850 3700 50  0001 C CNN
+	1    4850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3850 4850 3900
+Wire Wire Line
+	4850 3900 5500 3900
+Wire Wire Line
+	4850 4850 4850 4900
+Wire Wire Line
+	4850 3050 4850 3100
+Wire Wire Line
+	4850 4550 4850 4500
+$Comp
+L AR2ISS:R R?
+U 1 1 60AB2572
+P 4850 4700
+F 0 "R?" H 4920 4746 50  0000 L CNN
+F 1 "10k" H 4920 4655 50  0000 L CNN
+F 2 "" V 4780 4700 50  0001 C CNN
+F 3 "~" H 4850 4700 50  0001 C CNN
+	1    4850 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 4500
+Wire Wire Line
+	4850 4500 5500 4500
+Connection ~ 5500 2700
+Wire Wire Line
+	4850 2700 5500 2700
+Wire Wire Line
+	4850 2750 4850 2700
+$Comp
+L AR2ISS:R R?
+U 1 1 60AA3C4C
+P 4850 2900
+F 0 "R?" H 4920 2946 50  0000 L CNN
+F 1 "10k" H 4920 2855 50  0000 L CNN
+F 2 "" V 4780 2900 50  0001 C CNN
+F 3 "~" H 4850 2900 50  0001 C CNN
+	1    4850 2900
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

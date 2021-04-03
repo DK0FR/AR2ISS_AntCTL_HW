@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -46,17 +46,6 @@ F 1 "GND" H 6005 1327 50  0000 C CNN
 F 2 "" H 6000 1500 50  0001 C CNN
 F 3 "" H 6000 1500 50  0001 C CNN
 	1    6000 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR2ISS:R R?
-U 1 1 606DF993
-P 7550 1300
-F 0 "R?" H 7620 1346 50  0000 L CNN
-F 1 "R" H 7620 1255 50  0000 L CNN
-F 2 "" V 7480 1300 50  0001 C CNN
-F 3 "~" H 7550 1300 50  0001 C CNN
-	1    7550 1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -284,12 +273,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J?
 U 1 1 606FEAF1
-P 9750 3150
-F 0 "J?" H 9800 3467 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 9800 3376 50  0000 C CNN
-F 2 "" H 9750 3150 50  0001 C CNN
-F 3 "~" H 9750 3150 50  0001 C CNN
-	1    9750 3150
+P 8100 2800
+F 0 "J?" H 8150 3117 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 8150 3026 50  0000 C CNN
+F 2 "" H 8100 2800 50  0001 C CNN
+F 3 "~" H 8100 2800 50  0001 C CNN
+	1    8100 2800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -377,52 +366,48 @@ Text Label 5850 4650 0    50   ~ 0
 SWDIO
 Text Label 5850 4750 0    50   ~ 0
 SWCLK
-Text Label 9550 3150 2    50   ~ 0
+Text Label 7900 2800 2    50   ~ 0
 NRST
-Text Label 10050 3250 0    50   ~ 0
+Text Label 8400 2900 0    50   ~ 0
 SWO
-Text Label 10050 3050 0    50   ~ 0
+Text Label 8400 2700 0    50   ~ 0
 SWDIO
-Text Label 10050 3150 0    50   ~ 0
+Text Label 8400 2800 0    50   ~ 0
 SWCLK
 $Comp
 L power:GND #PWR?
 U 1 1 60716775
-P 9450 3400
-F 0 "#PWR?" H 9450 3150 50  0001 C CNN
-F 1 "GND" H 9455 3227 50  0000 C CNN
-F 2 "" H 9450 3400 50  0001 C CNN
-F 3 "" H 9450 3400 50  0001 C CNN
-	1    9450 3400
+P 7800 3050
+F 0 "#PWR?" H 7800 2800 50  0001 C CNN
+F 1 "GND" H 7805 2877 50  0000 C CNN
+F 2 "" H 7800 3050 50  0001 C CNN
+F 3 "" H 7800 3050 50  0001 C CNN
+	1    7800 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VDDA #PWR?
 U 1 1 60716CBB
-P 9450 2800
-F 0 "#PWR?" H 9450 2650 50  0001 C CNN
-F 1 "VDDA" H 9465 2973 50  0000 C CNN
-F 2 "" H 9450 2800 50  0001 C CNN
-F 3 "" H 9450 2800 50  0001 C CNN
-	1    9450 2800
+P 7800 2450
+F 0 "#PWR?" H 7800 2300 50  0001 C CNN
+F 1 "VDDA" H 7815 2623 50  0000 C CNN
+F 2 "" H 7800 2450 50  0001 C CNN
+F 3 "" H 7800 2450 50  0001 C CNN
+	1    7800 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 2800 9450 3050
+	7800 2450 7800 2700
 Wire Wire Line
-	9450 3050 9550 3050
+	7800 2700 7900 2700
 Wire Wire Line
-	9450 3400 9450 3250
+	7800 3050 7800 2900
 Wire Wire Line
-	9450 3250 9550 3250
+	7800 2900 7900 2900
 Text HLabel 4450 4150 0    50   Input ~ 0
 I2C1_SCL
 Text HLabel 4450 4250 0    50   Input ~ 0
 I2C1_SDA
-Text HLabel 4450 4650 0    50   Input ~ 0
-I2C2_SCL
-Text HLabel 4450 4750 0    50   Input ~ 0
-I2C2_SDA
 Text HLabel 5850 4350 2    50   Input ~ 0
 USART1_TX
 Wire Wire Line
@@ -555,9 +540,9 @@ Wire Wire Line
 Wire Wire Line
 	5850 4750 5750 4750
 Text HLabel 5850 3950 2    50   Input ~ 0
-PTT1
+PTT_Main
 Text HLabel 5850 4050 2    50   Input ~ 0
-PTT2
+PTT_Sub
 Text HLabel 4450 3350 0    50   Input ~ 0
 LCD_EN
 Text HLabel 4450 3450 0    50   Input ~ 0
@@ -580,4 +565,109 @@ Wire Wire Line
 	4550 3050 4450 3050
 Text HLabel 4450 3550 0    50   Input ~ 0
 Preamp
+Text HLabel 4450 4450 0    50   Input ~ 0
+ROT_UP
+Text HLabel 4450 4550 0    50   Input ~ 0
+ROT_DOWN
+Text HLabel 4450 4650 0    50   Input ~ 0
+ROT_LEFT
+Text HLabel 4450 4750 0    50   Input ~ 0
+ROT_RIGHT
+Text HLabel 5850 4450 2    50   Input ~ 0
+CREL_A
+Text HLabel 5850 4550 2    50   Input ~ 0
+CREL_B
+Text HLabel 4450 4050 0    50   Input ~ 0
+AMP
+Text HLabel 4450 3750 0    50   Input ~ 0
+C_NO
+Text HLabel 4450 3850 0    50   Input ~ 0
+C_NC
+$Comp
+L AR2ISS:R R?
+U 1 1 609716B8
+P 7400 2600
+F 0 "R?" V 7193 2600 50  0000 C CNN
+F 1 "10k" V 7284 2600 50  0000 C CNN
+F 2 "" V 7330 2600 50  0001 C CNN
+F 3 "~" H 7400 2600 50  0001 C CNN
+	1    7400 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7900 2800 7400 2800
+Wire Wire Line
+	7400 2800 7400 2750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60974B50
+P 7400 2350
+F 0 "#PWR?" H 7400 2200 50  0001 C CNN
+F 1 "+3V3" H 7415 2523 50  0000 C CNN
+F 2 "" H 7400 2350 50  0001 C CNN
+F 3 "" H 7400 2350 50  0001 C CNN
+	1    7400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2350 7400 2450
+Wire Wire Line
+	4550 2750 4150 2750
+Wire Wire Line
+	4150 2750 4150 2850
+Wire Wire Line
+	4150 2850 3900 2850
+Wire Wire Line
+	3900 2850 3900 2950
+$Comp
+L power:GND #PWR?
+U 1 1 6097B5D1
+P 3900 3200
+F 0 "#PWR?" H 3900 2950 50  0001 C CNN
+F 1 "GND" V 3905 3072 50  0000 R CNN
+F 2 "" H 3900 3200 50  0001 C CNN
+F 3 "" H 3900 3200 50  0001 C CNN
+	1    3900 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L AR2ISS:C C?
+U 1 1 6097BB40
+P 7400 3000
+F 0 "C?" H 7285 2954 50  0000 R CNN
+F 1 "100n" H 7285 3045 50  0000 R CNN
+F 2 "" H 7438 2850 50  0001 C CNN
+F 3 "~" H 7400 3000 50  0001 C CNN
+	1    7400 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7400 2800 7400 2850
+Connection ~ 7400 2800
+$Comp
+L power:GND #PWR?
+U 1 1 6097F29C
+P 7400 3250
+F 0 "#PWR?" H 7400 3000 50  0001 C CNN
+F 1 "GND" H 7405 3077 50  0000 C CNN
+F 2 "" H 7400 3250 50  0001 C CNN
+F 3 "" H 7400 3250 50  0001 C CNN
+	1    7400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3150 7400 3250
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 60982DC3
+P 3900 3050
+F 0 "JP?" V 3946 3003 50  0000 R CNN
+F 1 "Jumper_NC_Small" H 4050 3200 50  0000 R CNN
+F 2 "" H 3900 3050 50  0001 C CNN
+F 3 "~" H 3900 3050 50  0001 C CNN
+	1    3900 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 3150 3900 3200
 $EndSCHEMATC

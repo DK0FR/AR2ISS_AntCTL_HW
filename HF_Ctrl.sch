@@ -1,0 +1,393 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 5800 5100 0    50   Input ~ 0
+AMP_ON
+Text HLabel 7250 2050 0    50   Input ~ 0
+Coax_NC
+Text HLabel 7250 1850 0    50   Input ~ 0
+Coax_NO
+$Comp
+L power:+24V #PWR?
+U 1 1 607E635B
+P 7150 800
+AR Path="/60660B68/607E635B" Ref="#PWR?"  Part="1" 
+AR Path="/607E0323/607E635B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7150 650 50  0001 C CNN
+F 1 "+24V" H 7165 973 50  0000 C CNN
+F 2 "" H 7150 800 50  0001 C CNN
+F 3 "" H 7150 800 50  0001 C CNN
+	1    7150 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1850 7350 1850
+$Comp
+L Transistor_FET:AO3400A Q?
+U 1 1 607F6434
+P 5500 2400
+F 0 "Q?" H 5705 2446 50  0000 L CNN
+F 1 "AO3400A" H 5705 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 2325 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 5500 2400 50  0001 L CNN
+	1    5500 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1750 7350 1750
+$Comp
+L AR2ISS:R R?
+U 1 1 607FEDFC
+P 5200 2600
+F 0 "R?" H 5270 2646 50  0000 L CNN
+F 1 "100k" H 5270 2555 50  0000 L CNN
+F 2 "" V 5130 2600 50  0001 C CNN
+F 3 "~" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2450 5200 2400
+Wire Wire Line
+	5200 2400 5300 2400
+Connection ~ 3950 2400
+Wire Wire Line
+	3850 2400 3950 2400
+Wire Wire Line
+	3950 2400 4050 2400
+Wire Wire Line
+	3950 2450 3950 2400
+$Comp
+L AR2ISS:R R?
+U 1 1 607FE5A7
+P 3950 2600
+F 0 "R?" H 4020 2646 50  0000 L CNN
+F 1 "100k" H 4020 2555 50  0000 L CNN
+F 2 "" V 3880 2600 50  0001 C CNN
+F 3 "~" H 3950 2600 50  0001 C CNN
+	1    3950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:AO3400A Q?
+U 1 1 607EDBCE
+P 4250 2400
+F 0 "Q?" H 4455 2446 50  0000 L CNN
+F 1 "AO3400A" H 4450 2300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4450 2325 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 4250 2400 50  0001 L CNN
+	1    4250 2400
+	1    0    0    -1  
+$EndComp
+Text HLabel 3850 2400 0    50   Input ~ 0
+Coax_Rel_A
+Text HLabel 5100 2400 0    50   Input ~ 0
+Coax_Ref_B
+Wire Wire Line
+	4350 1550 7350 1550
+Wire Wire Line
+	5100 2400 5200 2400
+Connection ~ 5200 2400
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6081272B
+P 9250 4900
+F 0 "J?" H 9330 4892 50  0000 L CNN
+F 1 "Conn_01x02" H 9330 4801 50  0000 L CNN
+F 2 "" H 9250 4900 50  0001 C CNN
+F 3 "~" H 9250 4900 50  0001 C CNN
+	1    9250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:AO3400A Q?
+U 1 1 608139C2
+P 6550 5100
+F 0 "Q?" H 6755 5146 50  0000 L CNN
+F 1 "AO3400A" H 6755 5055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6750 5025 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 6550 5100 50  0001 L CNN
+	1    6550 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR2ISS:R R?
+U 1 1 6081705A
+P 6200 5350
+F 0 "R?" H 6270 5396 50  0000 L CNN
+F 1 "100k" H 6270 5305 50  0000 L CNN
+F 2 "" V 6130 5350 50  0001 C CNN
+F 3 "~" H 6200 5350 50  0001 C CNN
+	1    6200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5100 6200 5100
+Wire Wire Line
+	6200 5100 6200 5200
+Wire Wire Line
+	6200 5100 5800 5100
+Connection ~ 6200 5100
+$Comp
+L power:GND #PWR?
+U 1 1 6081A518
+P 6650 5600
+AR Path="/60660B68/6081A518" Ref="#PWR?"  Part="1" 
+AR Path="/607E0323/6081A518" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6650 5350 50  0001 C CNN
+F 1 "GND" H 6655 5427 50  0000 C CNN
+F 2 "" H 6650 5600 50  0001 C CNN
+F 3 "" H 6650 5600 50  0001 C CNN
+	1    6650 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2750 5200 2800
+Wire Wire Line
+	5600 2800 5600 2850
+Wire Wire Line
+	5200 2800 5600 2800
+Connection ~ 5600 2800
+Wire Wire Line
+	5600 2600 5600 2800
+$Comp
+L power:GND #PWR?
+U 1 1 607FD23E
+P 5600 2850
+AR Path="/60660B68/607FD23E" Ref="#PWR?"  Part="1" 
+AR Path="/607E0323/607FD23E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5600 2600 50  0001 C CNN
+F 1 "GND" H 5605 2677 50  0000 C CNN
+F 2 "" H 5600 2850 50  0001 C CNN
+F 3 "" H 5600 2850 50  0001 C CNN
+	1    5600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607FD51C
+P 4350 2850
+AR Path="/60660B68/607FD51C" Ref="#PWR?"  Part="1" 
+AR Path="/607E0323/607FD51C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 2600 50  0001 C CNN
+F 1 "GND" H 4355 2677 50  0000 C CNN
+F 2 "" H 4350 2850 50  0001 C CNN
+F 3 "" H 4350 2850 50  0001 C CNN
+	1    4350 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2800 4350 2850
+Wire Wire Line
+	4350 2600 4350 2800
+Connection ~ 4350 2800
+Wire Wire Line
+	3950 2800 4350 2800
+Wire Wire Line
+	3950 2750 3950 2800
+$Comp
+L AR2ISS:R R?
+U 1 1 6082428F
+P 4350 2000
+F 0 "R?" H 4420 2046 50  0000 L CNN
+F 1 "50" H 4420 1955 50  0000 L CNN
+F 2 "" V 4280 2000 50  0001 C CNN
+F 3 "~" H 4350 2000 50  0001 C CNN
+	1    4350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR2ISS:R R?
+U 1 1 60834F37
+P 5600 2000
+F 0 "R?" H 5670 2046 50  0000 L CNN
+F 1 "50" H 5670 1955 50  0000 L CNN
+F 2 "" V 5530 2000 50  0001 C CNN
+F 3 "~" H 5600 2000 50  0001 C CNN
+	1    5600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2200 5600 2150
+Wire Wire Line
+	5600 1850 5600 1750
+Wire Wire Line
+	4350 1550 4350 1850
+Wire Wire Line
+	4350 2150 4350 2200
+Wire Wire Line
+	6200 5500 6200 5550
+Wire Wire Line
+	6200 5550 6650 5550
+Wire Wire Line
+	6650 5300 6650 5550
+Connection ~ 6650 5550
+Wire Wire Line
+	6650 5550 6650 5600
+$Comp
+L Relay:G6S-2 K?
+U 1 1 60844AEE
+P 7900 4400
+F 0 "K?" V 7133 4400 50  0000 C CNN
+F 1 "G6S-2" V 7224 4400 50  0000 C CNN
+F 2 "" H 7900 4400 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6s.pdf" H 7900 4400 50  0001 C CNN
+	1    7900 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 4900 9050 4900
+Wire Wire Line
+	9050 5000 8600 5000
+Wire Wire Line
+	8600 5000 8600 5400
+Wire Wire Line
+	8600 5400 7450 5400
+Wire Wire Line
+	7450 5400 7450 4800
+Wire Wire Line
+	7450 4800 7600 4800
+$Comp
+L power:+24V #PWR?
+U 1 1 6084BE6E
+P 8350 3400
+AR Path="/60660B68/6084BE6E" Ref="#PWR?"  Part="1" 
+AR Path="/607E0323/6084BE6E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8350 3250 50  0001 C CNN
+F 1 "+24V" H 8365 3573 50  0000 C CNN
+F 2 "" H 8350 3400 50  0001 C CNN
+F 3 "" H 8350 3400 50  0001 C CNN
+	1    8350 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4000 8200 4000
+Wire Wire Line
+	8350 3400 8350 3500
+Wire Wire Line
+	8050 3500 8350 3500
+Connection ~ 8350 3500
+Wire Wire Line
+	8350 3500 8350 4000
+Wire Wire Line
+	7750 3500 7500 3500
+Wire Wire Line
+	7500 3500 7500 4000
+Connection ~ 7500 4000
+Wire Wire Line
+	7500 4000 7600 4000
+$Comp
+L Diode:1N4148 D?
+U 1 1 608590BD
+P 7900 3500
+F 0 "D?" H 7900 3283 50  0000 C CNN
+F 1 "1N4148" H 7900 3374 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7900 3325 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7900 3500 50  0001 C CNN
+	1    7900 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60913ADA
+P 6800 1350
+F 0 "#PWR?" H 6800 1200 50  0001 C CNN
+F 1 "+5V" H 6815 1523 50  0000 C CNN
+F 2 "" H 6800 1350 50  0001 C CNN
+F 3 "" H 6800 1350 50  0001 C CNN
+	1    6800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1350 6800 1650
+Wire Wire Line
+	6800 1650 7350 1650
+Wire Wire Line
+	7250 2050 7350 2050
+Wire Wire Line
+	7350 1950 6800 1950
+$Comp
+L Connector:DB9_Female J?
+U 1 1 60808F5E
+P 7650 1650
+F 0 "J?" H 7568 958 50  0000 C CNN
+F 1 "DB9_Female" H 7568 1049 50  0000 C CNN
+F 2 "" H 7650 1650 50  0001 C CNN
+F 3 " ~" H 7650 1650 50  0001 C CNN
+	1    7650 1650
+	1    0    0    1   
+$EndComp
+NoConn ~ 7350 1450
+NoConn ~ 7350 1250
+$Comp
+L Device:Polyfuse F?
+U 1 1 60925B5A
+P 7150 1000
+F 0 "F?" V 6900 1000 50  0000 C CNN
+F 1 "PFRA 050" V 7000 1000 50  0000 C CNN
+F 2 "Fuse:Fuse_BelFuse_0ZRE0005FF_L8.3mm_W3.8mm" H 6950 350 50  0001 C CNN
+F 3 "~" H 7150 1000 50  0001 C CNN
+F 4 "" V 7150 1000 50  0001 C CNN "Field4"
+	1    7150 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7150 800  7150 850 
+Wire Wire Line
+	7150 1150 7150 1350
+Wire Wire Line
+	7150 1350 7350 1350
+$Comp
+L Device:LED D?
+U 1 1 6092923F
+P 6950 4300
+F 0 "D?" V 6989 4182 50  0000 R CNN
+F 1 "LED" V 6898 4182 50  0000 R CNN
+F 2 "" H 6950 4300 50  0001 C CNN
+F 3 "~" H 6950 4300 50  0001 C CNN
+	1    6950 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6650 4000 6950 4000
+$Comp
+L AR2ISS:R R?
+U 1 1 6092E5F6
+P 6950 4650
+F 0 "R?" H 7020 4696 50  0000 L CNN
+F 1 "3k" H 7020 4605 50  0000 L CNN
+F 2 "" V 6880 4650 50  0001 C CNN
+F 3 "~" H 6950 4650 50  0001 C CNN
+	1    6950 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4000 6950 4150
+Connection ~ 6950 4000
+Wire Wire Line
+	6950 4000 7500 4000
+Wire Wire Line
+	6950 4450 6950 4500
+Wire Wire Line
+	6950 4800 6950 4850
+Wire Wire Line
+	6950 4850 6650 4850
+Connection ~ 6650 4850
+Wire Wire Line
+	6650 4850 6650 4900
+Wire Wire Line
+	6650 4000 6650 4850
+NoConn ~ 6800 1950
+$EndSCHEMATC

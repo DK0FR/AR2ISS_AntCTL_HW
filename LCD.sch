@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -292,8 +292,6 @@ Wire Wire Line
 Wire Wire Line
 	8850 2200 8950 2200
 Wire Wire Line
-	8850 2100 8950 2100
-Wire Wire Line
 	8850 2000 8950 2000
 Wire Wire Line
 	8850 1900 8950 1900
@@ -405,7 +403,7 @@ L AR2ISS:R R?
 U 1 1 60709B75
 P 5200 6000
 F 0 "R?" H 5270 6046 50  0000 L CNN
-F 1 "3k" H 5270 5955 50  0000 L CNN
+F 1 "10k" H 5270 5955 50  0000 L CNN
 F 2 "" V 5130 6000 50  0001 C CNN
 F 3 "~" H 5200 6000 50  0001 C CNN
 	1    5200 6000
@@ -790,10 +788,10 @@ Wire Wire Line
 	4700 6500 5200 6500
 Connection ~ 5200 6500
 $Comp
-L AR2ISS:R R?
+L AR2ISS:R 10k
 U 1 1 60905862
 P 3100 6600
-F 0 "R?" H 3170 6646 50  0000 L CNN
+F 0 "10k" H 3170 6646 50  0000 L CNN
 F 1 "3k" H 3170 6555 50  0000 L CNN
 F 2 "" V 3030 6600 50  0001 C CNN
 F 3 "~" H 3100 6600 50  0001 C CNN
@@ -822,7 +820,7 @@ L AR2ISS:R R?
 U 1 1 6093B3EE
 P 9800 3650
 F 0 "R?" H 9870 3696 50  0000 L CNN
-F 1 "3k" H 9870 3605 50  0000 L CNN
+F 1 "10k" H 9870 3605 50  0000 L CNN
 F 2 "" V 9730 3650 50  0001 C CNN
 F 3 "~" H 9800 3650 50  0001 C CNN
 	1    9800 3650
@@ -841,7 +839,7 @@ L AR2ISS:R R?
 U 1 1 609602BC
 P 10100 3650
 F 0 "R?" H 10170 3696 50  0000 L CNN
-F 1 "3k" H 10170 3605 50  0000 L CNN
+F 1 "10k" H 10170 3605 50  0000 L CNN
 F 2 "" V 10030 3650 50  0001 C CNN
 F 3 "~" H 10100 3650 50  0001 C CNN
 	1    10100 3650
@@ -850,31 +848,14 @@ $EndComp
 $Comp
 L AR2ISS:R R?
 U 1 1 6096098F
-P 7550 3650
-F 0 "R?" H 7620 3696 50  0000 L CNN
-F 1 "3k" H 7620 3605 50  0000 L CNN
-F 2 "" V 7480 3650 50  0001 C CNN
-F 3 "~" H 7550 3650 50  0001 C CNN
-	1    7550 3650
+P 7550 4300
+F 0 "R?" H 7620 4346 50  0000 L CNN
+F 1 "10k" H 7620 4255 50  0000 L CNN
+F 2 "" V 7480 4300 50  0001 C CNN
+F 3 "~" H 7550 4300 50  0001 C CNN
+	1    7550 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7550 4050 8350 4050
-Wire Wire Line
-	7550 3800 7550 4050
-$Comp
-L power:+5V #PWR?
-U 1 1 609783F2
-P 7550 3450
-F 0 "#PWR?" H 7550 3300 50  0001 C CNN
-F 1 "+5V" H 7565 3623 50  0000 C CNN
-F 2 "" H 7550 3450 50  0001 C CNN
-F 3 "" H 7550 3450 50  0001 C CNN
-	1    7550 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 3450 7550 3500
 $Comp
 L power:+5V #PWR?
 U 1 1 60981250
@@ -1118,11 +1099,97 @@ Text HLabel 7500 4050 0    50   Input ~ 0
 CE
 Text HLabel 8250 2500 0    50   Input ~ 0
 Backlight
+Text Label 2150 1550 0    50   ~ 0
+LED3
+Text Label 2150 1650 0    50   ~ 0
+LED7
+Text Label 2150 1750 0    50   ~ 0
+LED11
+Text Label 2150 1850 0    50   ~ 0
+LED12
+Text Label 2150 1950 0    50   ~ 0
+LED13
+Text Label 2150 2050 0    50   ~ 0
+LED14
+Text Label 2150 2150 0    50   ~ 0
+LED15
+Text Label 2150 2250 0    50   ~ 0
+LED17
+Text Label 2150 2350 0    50   ~ 0
+LED18
+Text Label 2150 2450 0    50   ~ 0
+LED19
+Text Label 2150 2550 0    50   ~ 0
+LED22
+Text Label 2150 2650 0    50   ~ 0
+LED_R
+Text Label 2150 2750 0    50   ~ 0
+LED_G
+Text Label 8250 1900 2    50   ~ 0
+SW_ROW1
+Text Label 8950 1900 0    50   ~ 0
+SW_ROW2
+Text Label 8250 2000 2    50   ~ 0
+SW_ROW3
+Text Label 8950 2000 0    50   ~ 0
+SW_ROW4
+Text Label 8250 2200 2    50   ~ 0
+SW_COL1
+Text Label 8950 2200 0    50   ~ 0
+SW_COL2
+Text Label 8250 2300 2    50   ~ 0
+SW_COL3
+Text Label 8950 2300 0    50   ~ 0
+SW_COL4
+Text Label 8250 2400 2    50   ~ 0
+SW_COL5
+Text Label 8250 2100 2    50   ~ 0
+SW_ROW5
+NoConn ~ 8850 2100
+NoConn ~ 8850 900 
+NoConn ~ 8350 900 
 Wire Wire Line
-	7550 4050 7500 4050
+	7500 4050 7550 4050
+Wire Wire Line
+	7550 4050 7550 4150
+Connection ~ 7550 4050
+Wire Wire Line
+	7550 4050 8350 4050
+Wire Wire Line
+	7550 4550 7550 4450
+$Comp
+L power:GND #PWR?
+U 1 1 606D63F1
+P 7550 4550
+F 0 "#PWR?" H 7550 4300 50  0001 C CNN
+F 1 "GND" H 7555 4377 50  0000 C CNN
+F 2 "" H 7550 4550 50  0001 C CNN
+F 3 "" H 7550 4550 50  0001 C CNN
+	1    7550 4550
+	1    0    0    -1  
+$EndComp
+Text Label 1650 3350 0    50   ~ 0
+SW_ROW1
+Text Label 1650 3450 0    50   ~ 0
+SW_ROW2
+Text Label 1650 3550 0    50   ~ 0
+SW_ROW3
+Text Label 1650 3650 0    50   ~ 0
+SW_ROW4
+Text Label 1650 3750 0    50   ~ 0
+SW_ROW5
+Text Label 1650 4150 0    50   ~ 0
+SW_COL1
+Text Label 1650 4250 0    50   ~ 0
+SW_COL2
+Text Label 1650 4350 0    50   ~ 0
+SW_COL3
+Text Label 1650 4450 0    50   ~ 0
+SW_COL4
+Text Label 1650 4550 0    50   ~ 0
+SW_COL5
 Wire Bus Line
 	1150 3150 1150 4750
 Wire Bus Line
 	1150 1150 1150 2750
-Connection ~ 7550 4050
 $EndSCHEMATC
