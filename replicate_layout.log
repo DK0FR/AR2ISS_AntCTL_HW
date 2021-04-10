@@ -1,0 +1,93 @@
+04-10 17:08:07 replicate_layout.action_replicate_layout 305:Plugin executed on: 'win32'
+04-10 17:08:07 replicate_layout.action_replicate_layout 306:Plugin executed with python version: '2.7.18 (default, Apr 20 2020, 16:57:11)  [GCC 9.3.0 64 bit (AMD64)]'
+04-10 17:08:07 replicate_layout.action_replicate_layout 307:KiCad build version: (5.1.9)-1
+04-10 17:08:07 replicate_layout.action_replicate_layout 308:Replicate layout plugin version: 70 started
+04-10 17:08:07 replicate_layout.action_replicate_layout 340:Preparing replicator with U13 as a reference
+04-10 17:08:07 replicate_layout.replicatelayout 215:getting project hierarchy from schematics
+04-10 17:08:07 replicate_layout.replicatelayout 217:Project hierarchy looks like:
+{u'607938CE': [u'RS485Tranceiver2', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'60795F15': [u'RS485Tranceiver3', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'60679D69': [u'IOExpander2', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\IOExpander.sch'], u'607E0323': [u'HF_Ctrl', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\HF_Ctrl.sch'], u'6083C74D': [u'OD_Output2', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch'], u'6083D1F7': [u'OD_Output4', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch'], u'607267A8': [u'IOExpander', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\IOExpander.sch'], u'6072829D': [u'RS422', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS422.sch'], u'606DDE00': [u'Microcontroller', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\Microcontroller.sch'], u'60660B68': [u'PowerSupply', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\PowerSupply.sch'], u'60727BD1': [u'RS485Tranceiver1', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'6083CC27': [u'OD_Output3', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch'], u'6074FD4F': [u'Rotor', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\Rotor.sch'], u'60797D2F': [u'RS485Tranceiver4', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'60679DF6': [u'LCD', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\LCD.sch'], u'60821709': [u'OD_Output', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch']}
+04-10 17:08:07 replicate_layout.replicatelayout 225:getting a list of all footprints on board
+04-10 17:08:07 replicate_layout.action_replicate_layout 367:source anchor footprint is u'U13'
+Located on:[u'RS422', u'RS485Tranceiver1']
+With filenames:[u'RS422.sch', u'RS485Tranceiver.sch']
+With sheet_id:[u'RS422', u'RS485Tranceiver1']
+04-10 17:08:07 replicate_layout.action_replicate_layout 371:Corresponding footprints are 
+[(u'U16', [u'RS422', u'RS485Tranceiver2']), (u'U15', [u'RS422', u'RS485Tranceiver4']), (u'U14', [u'RS422', u'RS485Tranceiver3']), (u'U13', [u'RS422', u'RS485Tranceiver1'])]
+04-10 17:08:07 replicate_layout.action_replicate_layout 384:Showing dialog
+04-10 17:08:07 replicate_layout.action_replicate_layout 388:Pcbnew position: wx.Point(0, 0)
+04-10 17:08:07 replicate_layout.action_replicate_layout 394:Display 0: wx.Rect(0, 0, 3840, 2160)
+04-10 17:08:07 replicate_layout.action_replicate_layout 394:Display 1: wx.Rect(5760, 1641, 2520, 1575)
+04-10 17:08:07 replicate_layout.action_replicate_layout 398:Toolbar position: wx.Point(3467, 173)
+04-10 17:08:07 replicate_layout.action_replicate_layout 405:Dialog position: wx.Point(3154, 173)
+04-10 17:08:12 replicate_layout.replicatelayout 249:construcing a list of sheets suitable for replication on level:u'RS485Tranceiver1', file:u'RS485Tranceiver.sch'
+04-10 17:08:12 replicate_layout.replicatelayout 256:Source sheet path up to the level:[u'RS422', u'RS485Tranceiver1']
+04-10 17:08:12 replicate_layout.replicatelayout 260:Footprints on the sheets:
+[u'U16', u'U15', u'U14', u'U13']
+04-10 17:08:12 replicate_layout.replicatelayout 263:Footprints raw sheet ids:
+[u'/6072829D/607938CE/6072BD51', u'/6072829D/60797D2F/6072BD51', u'/6072829D/60795F15/6072BD51', u'/6072829D/60727BD1/6072BD51']
+04-10 17:08:12 replicate_layout.replicatelayout 279:All sheets to replicate:
+[[u'RS422', u'RS485Tranceiver2'], [u'RS422', u'RS485Tranceiver4'], [u'RS422', u'RS485Tranceiver3'], [u'RS422', u'RS485Tranceiver1']]
+04-10 17:08:12 replicate_layout.replicatelayout 284:All sheets to replicate sorted:
+[[u'RS422', u'RS485Tranceiver1'], [u'RS422', u'RS485Tranceiver2'], [u'RS422', u'RS485Tranceiver3'], [u'RS422', u'RS485Tranceiver4']]
+04-10 17:08:12 replicate_layout.replicatelayout 290:All sheets to replicate sorted and without source sheet:
+[[u'RS422', u'RS485Tranceiver2'], [u'RS422', u'RS485Tranceiver3'], [u'RS422', u'RS485Tranceiver4']]
+04-10 17:08:15 replicate_layout.replicatelayout 249:construcing a list of sheets suitable for replication on level:u'RS485Tranceiver1', file:u'RS485Tranceiver.sch'
+04-10 17:08:15 replicate_layout.replicatelayout 256:Source sheet path up to the level:[u'RS422', u'RS485Tranceiver1']
+04-10 17:08:15 replicate_layout.replicatelayout 260:Footprints on the sheets:
+[u'U16', u'U15', u'U14', u'U13']
+04-10 17:08:15 replicate_layout.replicatelayout 263:Footprints raw sheet ids:
+[u'/6072829D/607938CE/6072BD51', u'/6072829D/60797D2F/6072BD51', u'/6072829D/60795F15/6072BD51', u'/6072829D/60727BD1/6072BD51']
+04-10 17:08:15 replicate_layout.replicatelayout 279:All sheets to replicate:
+[[u'RS422', u'RS485Tranceiver2'], [u'RS422', u'RS485Tranceiver4'], [u'RS422', u'RS485Tranceiver3'], [u'RS422', u'RS485Tranceiver1']]
+04-10 17:08:15 replicate_layout.replicatelayout 284:All sheets to replicate sorted:
+[[u'RS422', u'RS485Tranceiver1'], [u'RS422', u'RS485Tranceiver2'], [u'RS422', u'RS485Tranceiver3'], [u'RS422', u'RS485Tranceiver4']]
+04-10 17:08:15 replicate_layout.replicatelayout 290:All sheets to replicate sorted and without source sheet:
+[[u'RS422', u'RS485Tranceiver2'], [u'RS422', u'RS485Tranceiver3'], [u'RS422', u'RS485Tranceiver4']]
+04-10 17:08:15 replicate_layout.action_replicate_layout 179:Replicating layout
+04-10 17:08:15 replicate_layout.replicatelayout 994:Starting replication of sheets: [[u'RS422', u'RS485Tranceiver2'], [u'RS422', u'RS485Tranceiver3'], [u'RS422', u'RS485Tranceiver4']]
+on level: [u'RS422', u'RS485Tranceiver1']
+with tracks=True, zone=True, text=True, containing=True, remove=False, locked=False
+04-10 17:08:15 root 261:updating GUI message: 'Preparing for replication'
+04-10 17:08:15 root 266:updating GUI with: 0
+04-10 17:08:15 replicate_layout.replicatelayout 556:Getting the list of source footprints
+04-10 17:08:15 replicate_layout.replicatelayout 560:Getting the list of all the remaining footprints
+04-10 17:08:15 replicate_layout.replicatelayout 564:Getting nets local to source footprints
+04-10 17:08:15 replicate_layout.replicatelayout 568:Getting source bounding box
+04-10 17:08:15 root 266:updating GUI with: 37
+04-10 17:08:15 replicate_layout.replicatelayout 572:Getting source tracks
+04-10 17:08:15 replicate_layout.replicatelayout 576:Getting source zones
+04-10 17:08:15 root 266:updating GUI with: 62
+04-10 17:08:15 replicate_layout.replicatelayout 580:Getting source text items
+04-10 17:08:15 replicate_layout.replicatelayout 584:Getting source text items
+04-10 17:08:15 root 261:updating GUI message: 'Replicating footprints'
+04-10 17:08:15 replicate_layout.replicatelayout 590:Replicating footprints
+04-10 17:08:15 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'RS422', u'RS485Tranceiver2']
+04-10 17:08:15 root 266:updating GUI with: 28
+04-10 17:08:15 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'RS422', u'RS485Tranceiver3']
+04-10 17:08:15 root 266:updating GUI with: 57
+04-10 17:08:15 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'RS422', u'RS485Tranceiver4']
+04-10 17:08:15 root 266:updating GUI with: 85
+04-10 17:08:15 root 261:updating GUI message: 'Replicating tracks'
+04-10 17:08:15 replicate_layout.replicatelayout 720:Replicating tracks
+04-10 17:08:15 replicate_layout.replicatelayout 726:Replicating tracks on sheet [u'RS422', u'RS485Tranceiver2']
+04-10 17:08:15 root 266:updating GUI with: 0
+04-10 17:08:15 replicate_layout.replicatelayout 726:Replicating tracks on sheet [u'RS422', u'RS485Tranceiver3']
+04-10 17:08:15 replicate_layout.replicatelayout 726:Replicating tracks on sheet [u'RS422', u'RS485Tranceiver4']
+04-10 17:08:15 root 266:updating GUI with: 67
+04-10 17:08:15 root 261:updating GUI message: 'Replicating zones'
+04-10 17:08:15 replicate_layout.replicatelayout 771:Replicating zones
+04-10 17:08:15 replicate_layout.replicatelayout 778:Replicating zones on sheet [u'RS422', u'RS485Tranceiver2']
+04-10 17:08:15 replicate_layout.replicatelayout 778:Replicating zones on sheet [u'RS422', u'RS485Tranceiver3']
+04-10 17:08:15 root 266:updating GUI with: 66
+04-10 17:08:15 replicate_layout.replicatelayout 778:Replicating zones on sheet [u'RS422', u'RS485Tranceiver4']
+04-10 17:08:15 root 261:updating GUI message: 'Replicating text'
+04-10 17:08:15 replicate_layout.replicatelayout 837:Replicating text
+04-10 17:08:15 replicate_layout.replicatelayout 844:Replicating text on sheet [u'RS422', u'RS485Tranceiver2']
+04-10 17:08:15 replicate_layout.replicatelayout 844:Replicating text on sheet [u'RS422', u'RS485Tranceiver3']
+04-10 17:08:15 replicate_layout.replicatelayout 844:Replicating text on sheet [u'RS422', u'RS485Tranceiver4']
+04-10 17:08:15 root 261:updating GUI message: 'Replicating drawings'
+04-10 17:08:15 replicate_layout.replicatelayout 868:Replicating drawings
+04-10 17:08:15 replicate_layout.replicatelayout 874:Replicating drawings on sheet [u'RS422', u'RS485Tranceiver2']
+04-10 17:08:15 replicate_layout.replicatelayout 874:Replicating drawings on sheet [u'RS422', u'RS485Tranceiver3']
+04-10 17:08:15 replicate_layout.replicatelayout 874:Replicating drawings on sheet [u'RS422', u'RS485Tranceiver4']
+04-10 17:08:15 replicate_layout.action_replicate_layout 201:Replication complete
