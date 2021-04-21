@@ -571,9 +571,9 @@ Wire Wire Line
 	6350 2550 6450 2550
 Connection ~ 6600 1800
 Connection ~ 6600 3300
-Text HLabel 1600 1800 0    50   Input ~ 0
-A_in
 Text HLabel 1600 3300 0    50   Input ~ 0
+A_in
+Text HLabel 1600 1800 0    50   Input ~ 0
 B_in
 Wire Wire Line
 	1600 3300 2100 3300
