@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 17
+Sheet 13 21
 Title ""
 Date ""
 Rev ""
@@ -173,18 +173,7 @@ Wire Wire Line
 	3600 3500 3600 3350
 Wire Wire Line
 	3450 4900 3450 3050
-$Sheet
-S 5150 1300 700  600 
-U 60727BD1
-F0 "RS485Tranceiver1" 50
-F1 "RS485Tranceiver.sch" 50
-F2 "A_in" I L 5150 1400 50 
-F3 "B_in" I L 5150 1800 50 
-F4 "MODE" I R 5850 1500 50 
-F5 "VCC" I R 5850 1400 50 
-F6 "DATA" B R 5850 1650 50 
-$EndSheet
-Text HLabel 5950 1650 2    50   Input ~ 0
+Text HLabel 5950 3350 2    50   Input ~ 0
 TX
 Wire Wire Line
 	5950 1650 5850 1650
@@ -194,16 +183,11 @@ Wire Wire Line
 	6150 1400 6150 1200
 Wire Wire Line
 	6150 1200 7100 1200
-Wire Wire Line
-	5850 1500 6150 1500
-Wire Wire Line
-	6150 1500 6150 1400
-Connection ~ 6150 1400
 Text HLabel 5950 6850 2    50   Input ~ 0
 PTT2
 Text HLabel 5950 5150 2    50   Input ~ 0
 PTT1
-Text HLabel 5950 3350 2    50   Input ~ 0
+Text HLabel 5950 1650 2    50   Input ~ 0
 RX
 Wire Wire Line
 	7100 1000 7100 1200
@@ -277,21 +261,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 1800 5150 1800
 $Comp
-L power:GND #PWR092
-U 1 1 607AD833
-P 6200 3750
-F 0 "#PWR092" H 6200 3500 50  0001 C CNN
-F 1 "GND" H 6205 3577 50  0000 C CNN
-F 2 "" H 6200 3750 50  0001 C CNN
-F 3 "" H 6200 3750 50  0001 C CNN
-	1    6200 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 3750 6200 3500
-Wire Wire Line
-	6200 3500 5850 3500
-$Comp
 L power:GND #PWR0102
 U 1 1 607B0400
 P 6200 5550
@@ -358,8 +327,39 @@ F0 "RS485Tranceiver2" 50
 F1 "RS485Tranceiver.sch" 50
 F2 "A_in" I L 5150 3100 50 
 F3 "B_in" I L 5150 3500 50 
-F4 "MODE" I R 5850 3500 50 
+F4 "MODE" I R 5850 3200 50 
 F5 "VCC" I R 5850 3100 50 
 F6 "DATA" B R 5850 3350 50 
 $EndSheet
+$Sheet
+S 5150 1300 700  600 
+U 60727BD1
+F0 "RS485Tranceiver1" 50
+F1 "RS485Tranceiver.sch" 50
+F2 "A_in" I L 5150 1400 50 
+F3 "B_in" I L 5150 1800 50 
+F4 "MODE" I R 5850 1800 50 
+F5 "VCC" I R 5850 1400 50 
+F6 "DATA" B R 5850 1650 50 
+$EndSheet
+$Comp
+L power:GND #PWR092
+U 1 1 60908821
+P 6100 1950
+F 0 "#PWR092" H 6100 1700 50  0001 C CNN
+F 1 "GND" H 6105 1777 50  0000 C CNN
+F 2 "" H 6100 1950 50  0001 C CNN
+F 3 "" H 6100 1950 50  0001 C CNN
+	1    6100 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1800 6100 1800
+Wire Wire Line
+	6100 1800 6100 1950
+Wire Wire Line
+	5850 3200 6150 3200
+Wire Wire Line
+	6150 3200 6150 3100
+Connection ~ 6150 3100
 $EndSCHEMATC
