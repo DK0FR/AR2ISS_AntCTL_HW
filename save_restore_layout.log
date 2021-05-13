@@ -1,47 +1,41 @@
-04-21 21:26:08 save_restore_layout.action_save_restore_layout 160:Plugin executed on: 'win32'
-04-21 21:26:08 save_restore_layout.action_save_restore_layout 161:Plugin executed with python version: '2.7.18 (default, Apr 20 2020, 16:57:11)  [GCC 9.3.0 64 bit (AMD64)]'
-04-21 21:26:08 save_restore_layout.action_save_restore_layout 162:KiCad build version: (5.1.9)-1
-04-21 21:26:08 save_restore_layout.action_save_restore_layout 163:Save/Restore Layout plugin version: 51 started
-04-21 21:26:11 save_restore_layout.action_save_restore_layout 200:Save layout chosen
-04-21 21:26:11 save_restore_layout.save_restore_layout 845:Saving the current board temporary in order to leave current layout intact
-04-21 21:26:11 save_restore_layout.save_restore_layout 855:Getting schematics info
-04-21 21:26:11 save_restore_layout.save_restore_layout 180:getting project hierarchy from schematics
-04-21 21:26:11 save_restore_layout.save_restore_layout 182:Project hierarchy looks like:
-{u'607938CE': [u'RS485Tranceiver2', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'60795F15': [u'RS485Tranceiver3', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'60679D69': [u'IOExpander2', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\IOExpander.sch'], u'607E0323': [u'HF_Ctrl', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\HF_Ctrl.sch'], u'6083C74D': [u'OD_Output2', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch'], u'6083D1F7': [u'OD_Output4', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch'], u'607267A8': [u'IOExpander', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\IOExpander.sch'], u'6072829D': [u'RS422', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS422.sch'], u'606DDE00': [u'Microcontroller', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\Microcontroller.sch'], u'60660B68': [u'PowerSupply', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\PowerSupply.sch'], u'60727BD1': [u'RS485Tranceiver1', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'6083CC27': [u'OD_Output3', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch'], u'6074FD4F': [u'Rotor', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\Rotor.sch'], u'60797D2F': [u'RS485Tranceiver4', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'60679DF6': [u'LCD', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\LCD.sch'], u'60821709': [u'OD_Output', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch']}
-04-21 21:26:11 save_restore_layout.save_restore_layout 857:Getting layout info
-04-21 21:26:11 save_restore_layout.save_restore_layout 256:getting a list of all footprints on board
-04-21 21:26:11 save_restore_layout.save_restore_layout 859:Updating layout info with schematics info
-04-21 21:26:14 root 53:highlighting module: u'U13'
-04-21 21:26:14 root 53:highlighting module: u'R70'
-04-21 21:26:14 root 53:highlighting module: u'R69'
-04-21 21:26:14 root 53:highlighting module: u'R68'
-04-21 21:26:14 root 53:highlighting module: u'R67'
-04-21 21:26:14 root 53:highlighting module: u'R66'
-04-21 21:26:14 root 53:highlighting module: u'R65'
-04-21 21:26:14 root 53:highlighting module: u'R64'
-04-21 21:26:14 root 53:highlighting module: u'L13'
-04-21 21:26:14 root 53:highlighting module: u'L12'
-04-21 21:26:14 root 53:highlighting module: u'L11'
-04-21 21:26:14 root 53:highlighting module: u'L10'
-04-21 21:26:14 root 53:highlighting module: u'J10'
-04-21 21:26:14 root 53:highlighting module: u'D9'
-04-21 21:26:14 root 53:highlighting module: u'C40'
-04-21 21:26:14 root 53:highlighting module: u'C39'
-04-21 21:26:14 root 53:highlighting module: u'C38'
-04-21 21:26:14 root 53:highlighting module: u'C37'
-04-21 21:26:14 root 53:highlighting module: u'C36'
-04-21 21:26:28 save_restore_layout.save_restore_layout 941:Saving layout for level: [u'RS422', u'RS485Tranceiver1']
-04-21 21:26:28 save_restore_layout.save_restore_layout 942:Calculating hash of the layout schematics
-04-21 21:26:28 save_restore_layout.save_restore_layout 946:Saving hash for files: [u'RS485Tranceiver.sch']
-04-21 21:26:28 root 956:Source modules are: [u'U13', u'R70', u'R69', u'R68', u'R67', u'R66', u'R65', u'R64', u'L13', u'L12', u'L11', u'L10', u'J10', u'D9', u'C40', u'C39', u'C38', u'C37', u'C36']
-04-21 21:26:28 save_restore_layout.save_restore_layout 966:Removing everything else from the layout
-04-21 21:26:28 save_restore_layout.save_restore_layout 880:Removing text
-04-21 21:26:28 save_restore_layout.save_restore_layout 863:Removing drawing
-04-21 21:26:28 save_restore_layout.save_restore_layout 897:Removing zones
-04-21 21:26:28 save_restore_layout.save_restore_layout 913:Removing tracks
-04-21 21:26:28 save_restore_layout.save_restore_layout 916:Bounding box points: (42644999, 51930001, 140124999, 168605001)
-04-21 21:26:28 save_restore_layout.save_restore_layout 936:Removing modules
-04-21 21:26:28 save_restore_layout.save_restore_layout 985:Saving layout in temporary file
-04-21 21:26:28 save_restore_layout.save_restore_layout 988:Reading layout as text
-04-21 21:26:28 save_restore_layout.save_restore_layout 995:Saving layout data
-04-21 21:26:28 save_restore_layout.save_restore_layout 1002:Succesfully saved the layout
+05-03 19:13:53 save_restore_layout.action_save_restore_layout 160:Plugin executed on: 'win32'
+05-03 19:13:53 save_restore_layout.action_save_restore_layout 161:Plugin executed with python version: '2.7.18 (default, Apr 20 2020, 16:57:11)  [GCC 9.3.0 64 bit (AMD64)]'
+05-03 19:13:53 save_restore_layout.action_save_restore_layout 162:KiCad build version: (5.1.9)-1
+05-03 19:13:53 save_restore_layout.action_save_restore_layout 163:Save/Restore Layout plugin version: 51 started
+05-03 19:13:57 save_restore_layout.action_save_restore_layout 200:Save layout chosen
+05-03 19:13:57 save_restore_layout.save_restore_layout 845:Saving the current board temporary in order to leave current layout intact
+05-03 19:13:57 save_restore_layout.save_restore_layout 855:Getting schematics info
+05-03 19:13:57 save_restore_layout.save_restore_layout 180:getting project hierarchy from schematics
+05-03 19:13:57 save_restore_layout.save_restore_layout 182:Project hierarchy looks like:
+{u'607938CE': [u'RS485Tranceiver2', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'60795F15': [u'RS485Tranceiver3', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'60727BD1': [u'RS485Tranceiver1', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'60679D69': [u'IOExpander2', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\IOExpander.sch'], u'607E0323': [u'HF_Ctrl', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\HF_Ctrl.sch'], u'6083C74D': [u'OD_Output2', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch'], u'6083D1F7': [u'OD_Output4', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch'], u'60999526': [u'filter', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\filter.sch'], u'607267A8': [u'IOExpander', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\IOExpander.sch'], u'6072829D': [u'RS422', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS422.sch'], u'606DDE00': [u'Microcontroller', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\Microcontroller.sch'], u'60660B68': [u'PowerSupply', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\PowerSupply.sch'], u'60797D2F': [u'RS485Tranceiver4', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\RS485Tranceiver.sch'], u'6083CC27': [u'OD_Output3', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch'], u'6074FD4F': [u'Rotor', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\Rotor.sch'], u'60679DF6': [u'LCD', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\LCD.sch'], u'60821709': [u'OD_Output', u'C:\\Users\\Soeren\\Documents\\GitHub\\AR2ISS\\AR2ISS_AntCTL_HW\\OpenDrain.sch']}
+05-03 19:13:57 save_restore_layout.save_restore_layout 857:Getting layout info
+05-03 19:13:57 save_restore_layout.save_restore_layout 256:getting a list of all footprints on board
+05-03 19:13:57 save_restore_layout.save_restore_layout 859:Updating layout info with schematics info
+05-03 19:13:59 root 53:highlighting module: u'R86'
+05-03 19:13:59 root 53:highlighting module: u'R85'
+05-03 19:13:59 root 53:highlighting module: u'R80'
+05-03 19:13:59 root 53:highlighting module: u'L25'
+05-03 19:13:59 root 53:highlighting module: u'L24'
+05-03 19:13:59 root 53:highlighting module: u'L23'
+05-03 19:13:59 root 53:highlighting module: u'L22'
+05-03 19:13:59 root 53:highlighting module: u'J13'
+05-03 19:13:59 root 53:highlighting module: u'D12'
+05-03 19:13:59 root 53:highlighting module: u'C54'
+05-03 19:13:59 root 53:highlighting module: u'C53'
+05-03 19:13:59 root 53:highlighting module: u'C52'
+05-03 19:13:59 root 53:highlighting module: u'C51'
+05-03 19:14:07 save_restore_layout.save_restore_layout 941:Saving layout for level: [u'RS422', u'RS485Tranceiver1', u'filter']
+05-03 19:14:07 save_restore_layout.save_restore_layout 942:Calculating hash of the layout schematics
+05-03 19:14:07 save_restore_layout.save_restore_layout 946:Saving hash for files: [u'filter.sch']
+05-03 19:14:07 root 956:Source modules are: [u'R86', u'R85', u'R80', u'L25', u'L24', u'L23', u'L22', u'J13', u'D12', u'C54', u'C53', u'C52', u'C51']
+05-03 19:14:07 save_restore_layout.save_restore_layout 966:Removing everything else from the layout
+05-03 19:14:07 save_restore_layout.save_restore_layout 880:Removing text
+05-03 19:14:07 save_restore_layout.save_restore_layout 863:Removing drawing
+05-03 19:14:07 save_restore_layout.save_restore_layout 897:Removing zones
+05-03 19:14:07 save_restore_layout.save_restore_layout 913:Removing tracks
+05-03 19:14:07 save_restore_layout.save_restore_layout 916:Bounding box points: (45244999, 52255001, 151744999, 170075001)
+05-03 19:14:07 save_restore_layout.save_restore_layout 936:Removing modules
+05-03 19:14:07 save_restore_layout.save_restore_layout 985:Saving layout in temporary file
+05-03 19:14:07 save_restore_layout.save_restore_layout 988:Reading layout as text
+05-03 19:14:07 save_restore_layout.save_restore_layout 995:Saving layout data
+05-03 19:14:07 save_restore_layout.save_restore_layout 1002:Succesfully saved the layout
