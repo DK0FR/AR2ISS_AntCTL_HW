@@ -307,7 +307,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 2800 3850 2800
 $Comp
-L stmbl:non_plated U1
+L AR2ISS_AntCTL_HW-rescue:non_plated-stmbl U1
 U 1 1 6070B730
 P 9350 700
 F 0 "U1" H 9528 753 60  0000 L CNN
@@ -318,7 +318,7 @@ F 3 "" H 9350 700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L stmbl:non_plated U3
+L AR2ISS_AntCTL_HW-rescue:non_plated-stmbl U3
 U 1 1 6070C63D
 P 10200 700
 F 0 "U3" H 10378 753 60  0000 L CNN
@@ -329,7 +329,7 @@ F 3 "" H 10200 700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L stmbl:non_plated U4
+L AR2ISS_AntCTL_HW-rescue:non_plated-stmbl U4
 U 1 1 6070CD54
 P 10200 1100
 F 0 "U4" H 10378 1153 60  0000 L CNN
@@ -340,7 +340,7 @@ F 3 "" H 10200 1100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L stmbl:non_plated U2
+L AR2ISS_AntCTL_HW-rescue:non_plated-stmbl U2
 U 1 1 6070D205
 P 9350 1100
 F 0 "U2" H 9528 1153 60  0000 L CNN

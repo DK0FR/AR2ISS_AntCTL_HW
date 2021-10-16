@@ -398,11 +398,11 @@ I2C1_SCL
 Text HLabel 4450 4250 0    50   Input ~ 0
 I2C1_SDA
 Text HLabel 5850 4350 2    50   Input ~ 0
-USART1_TX
+USART1_RX
 Wire Wire Line
 	5350 1750 5350 2150
 Text HLabel 4450 3950 0    50   Input ~ 0
-USART1_RX
+USART1_TX
 Text HLabel 4450 4850 0    50   Input ~ 0
 SPI2_MOSI
 Text HLabel 4450 4350 0    50   Input ~ 0

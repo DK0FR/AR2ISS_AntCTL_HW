@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name AR2ISS)(type Legacy)(uri C:/Users/Soeren/Documents/GitHub/AR2ISS/AR2ISS_kicadLib/AR2ISS.lib)(options "")(descr ""))
+  (lib (name AR2ISS)(type Legacy)(uri ${KICAD_PROJECT}/AR2ISS_kicadLib/AR2ISS.lib)(options "")(descr ""))
   (lib (name AR2ISS_AntCTL_HW-rescue)(type Legacy)(uri ${KIPRJMOD}/AR2ISS_AntCTL_HW-rescue.lib)(options "")(descr ""))
 )
